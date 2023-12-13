@@ -14,7 +14,6 @@ const api = axios.create({});
 
 api.interceptors.response.use(
   (response: AxiosResponse<ApiResponse>) => {
-    // Custom 'resultType' and 'messages' exist in the response
     if (response.data.resultType && response.data.messages) {
       const message = response.data.messages[0];
       switch (response.data.resultType) {
@@ -37,7 +36,6 @@ api.interceptors.response.use(
     return response;
   },
   (error: any) => {
-    // HTTP status code handling
     const status = error.response?.status;
     let message =
       error.response?.data?.message ||
