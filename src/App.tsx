@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import api from "./ApiService";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MockAdapter from "axios-mock-adapter";
 import JSONView from "react-json-view";
