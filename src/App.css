@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -11,6 +10,12 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
+.header {
+  display: flex;
+  text-align: center;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -39,4 +44,52 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.paragraf {
+  border: 1px solid #000; /* 1px solid black border */
+  padding: 10px; /* Optional padding for better visual appearance */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #646cffaa;
+}
+
+.response-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.github-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust margin as needed */
 }
